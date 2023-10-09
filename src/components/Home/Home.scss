@@ -1,78 +1,84 @@
+@import "../../styles/variables.scss";
+
 .home-page {
+   text-align: center;
+
    .text-zone {
-      position: absolute;
-      left: 10%;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 40%;
+      max-width: 480px;
+      margin: 0 auto;
    }
 
    h1 {
-      color: #fff;
-      font-size: 53px;
-      margin: 0;
-      font-family: 'Coolvetica', sans-serif;
-      font-weight: 400;
+      color: $white-color;
+      font-size: 6.3rem;
+      font-family: $coolvetica-font;
+      user-select: none;
+      position: relative;
 
       &::before {
-         content: '<h1>';
-         font-family: 'La Belle Aurore';
-         color: #ffd700;
-         font-size: 18px;
+         content: "<h1>";
+         font-family: $beaty-font;
+         color: $primary-color;
+         font-size: 4.4rem;
          position: absolute;
-         margin-top: -40px;
-         left: 15px;
+         left: 0;
+         top: -10px;
+         transform: translateY(50%);
          opacity: 0.6;
       }
 
       &::after {
-         content: '</h1>';
-         font-family: 'La Belle Aurore';
-         color: #ffd700;
-         font-size: 18px;
+         content: "</h1>";
+         font-family: $beaty-font;
+         color: $primary-color;
+         font-size: 4.4rem;
          position: absolute;
-         margin-top: 18px;
-         margin-left: 20px;
+         transform: translateY(50%);
          opacity: 0.6;
       }
 
-      img {
-         width: 32px;
+      .big-letter {
+         font-family: $beaty-font;
          margin-left: 20px;
-         opacity: 0;
-         height: auto;
-         animation: rotateIn 1s linear both;
-         animation-delay: 1.4s;
+         color: $primary-color;
+         font-size: 8rem;
+         font-weight: 600;
       }
    }
-}
 
-h2 {
-   color: #8d8d8d;
-   margin-top: 20px;
-   font-weight: 400;
-   font-size: 11px;
-   font-family: sans-serif;
-   letter-spacing: 3px;
-   animation: fadeIn 1s 1.8s backwards;
-}
+   h2 {
+      color: $light-color;
+      margin: 20px 0 50px;
+      font-weight: 400;
+      font-size: 1.6rem;
+      font-family: $ubuntu-font;
+      letter-spacing: 2.5px;
+      animation: fadeIn 1s 1.8s backwards;
+   }
 
-.flat-button {
-   color: #ffd700;
-   font-size: 13px;
-   font-weight: 400;
-   letter-spacing: 4px;
-   font-family: sans-serif;
-   text-decoration: none;
-   padding: 10px 18px;
-   border: 1px solid #ffd700;
-   margin-top: 25px;
-   float: left;
-   animation: fadeIn 1s 1.8s backwards;
-   white-space: nowrap;
+   .flat-button {
+      display: inline-block;
+      color: $primary-color;
+      border: 5px solid $primary-color;
+      border-radius: 15px;
+      padding: 15px 25px;
+      font-size: 2.4rem;
+      font-family: $ubuntu-font;
+      letter-spacing: 3px;
+      font-weight: bold;
+      filter: drop-shadow(0 0 1px $primary-color) drop-shadow(0 0 20px $primary-color) contrast(1.2) brightness(1.2);
+      transition: 0.5s;
+      white-space: nowrap;
 
-   &:hover {
-      background: #ffd700;
-      color: #333;
+      &:hover {
+         color: $dark-color;
+         background-color: $primary-color;
+         filter: drop-shadow(0 0 5px $primary-color) contrast(1.5) brightness(1.5);
+      }
+
+      &:active {
+         border: 5px solid $light-color;
+         background-color: $light-color;
+      }
    }
 }

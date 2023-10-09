@@ -1,0 +1,50 @@
+@import 'animate.css';
+@import 'loaders.css/src/animations/pacman.scss';
+
+@import '../styles/fonts.scss';
+@import '../styles/reset.scss';
+@import '../styles/variables.scss';
+
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.2;
+  color: #444;
+  background: $dark-color;
+  min-height: 100vh;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input, textarea {
+  font-family: $ubuntu-font;
+}
+
+.loader-active {
+  display: block;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  animation: fadeOut 1s 1s;
+  animation-fill-mode: forwards;
+
+  .pacman > div:nth-child(1),
+  .pacman > div:nth-child(2) {
+    border-top-color: $primary-color !important;
+    border-bottom-color: $primary-color !important;
+    border-left-color: $primary-color !important;
+  }
+
+  .pacman > div:nth-child(3),
+  .pacman > div:nth-child(4),
+  .pacman > div:nth-child(5) {
+    background-color: $primary-color;
+  }
+
+}

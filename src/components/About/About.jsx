@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters';
 import './About.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCss3, faGit, faGitAlt, faGithub, faGithubSquare, faHtml5, faJs, faReact } from '@fortawesome/free-brands-svg-icons';
+import { faCss3, faGitAlt, faGithubSquare, faHtml5, faJs, faReact } from '@fortawesome/free-brands-svg-icons';
 import Loader from 'react-loaders';
 
 const About = () => {
@@ -28,7 +28,7 @@ const About = () => {
                   My goal is to become an experienced professional in frontend development and contribute to the creation of user-friendly and efficient online tools.
                </p>
                <p>
-                  I have skills in HTML, CSS, and JavaScript, which are the foundation of web development. I am familiar with various frameworks and libraries like React JS and Phaser JS, and I aim to deep dive into learning them.
+                  I have skills in HTML, CSS and JavaScript, which are the foundation of web development. I am familiar with various frameworks and libraries like React JS and Phaser JS, and I aim to deep dive into learning them.
                </p>
             </div>
 

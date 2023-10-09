@@ -1,0 +1,48 @@
+@import '../../styles/variables.scss';
+
+.projects-page {
+   text-align: center;
+
+   .text-zone {
+      max-width: 800px;
+      margin: 0 auto;
+
+      h1 {
+         font-size: 5.3rem;
+         font-family: $coolvetica-font;
+         color: $primary-color;
+         font-weight: 400;
+         position: relative;
+         margin-bottom: 40px;
+         user-select: none;
+
+         &::before {
+            content: '<h1>';
+            font-family: $beaty-font;
+            font-size: 4.4rem;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0px;
+            opacity: 0.6;
+         }
+
+         &::after {
+            content: '</h1>';
+            font-family: $beaty-font;
+            font-size: 4.4rem;
+            line-height: 18px;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0.6;
+         }
+      }
+   }
+   .text-animate-hover {
+      &:hover {
+         color: #fff;
+      }
+   }
+}
