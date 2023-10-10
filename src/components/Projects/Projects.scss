@@ -2,10 +2,22 @@
 
 .projects-page {
    text-align: center;
+   width: 80%;
+
+   @media (max-width: 790px) {
+      height: 100svh;
+      margin-top: 30px;
+   }
+
+   @media (max-width: 500px) {
+      height: 86svh;
+      width: 90%;
+   }
 
    .text-zone {
       max-width: 800px;
       margin: 0 auto;
+      padding: 0 20px;
 
       h1 {
          font-size: 5.3rem;
@@ -15,6 +27,14 @@
          position: relative;
          margin-bottom: 60px;
          user-select: none;
+
+         @media (max-width: 500px) {
+            font-size: 4.3rem;
+         }
+
+         @media (max-width: 400px) {
+            margin-bottom: 20px;
+         }
 
          &::before {
             content: "<h1>";
@@ -51,6 +71,23 @@
       max-width: 1200px;
       padding: 0 20px;
 
+      @media (max-width: 790px) {
+         padding: 0 20px 40px;
+      }
+      @media (max-width: 400px) {
+         padding: 0 0 40px;
+      }
+
+      ul {
+         display: none;
+
+         @media (max-width: 790px) {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+         }
+      }
+
       .project {
          display: flex;
          flex-direction: column-reverse;
@@ -59,8 +96,19 @@
          border-radius: 20px;
          gap: 20px;
 
+         @media (max-width: 790px) {
+            gap: 0;
+            border: 5px solid $light-color;
+         }
+
          img {
-            filter: brightness(0.7)
+            filter: brightness(0.7);
+
+            @media (max-width: 790px) {
+               filter: none;
+               border-bottom-left-radius: 20px;
+               border-bottom-right-radius: 20px;
+            }
          }
 
          &__info {
@@ -78,6 +126,19 @@
             border-radius: 20px;
             gap: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+
+            @media (max-width: 790px) {
+               position: static;
+               transform: none;
+               background-color: transparent;
+               box-shadow: none;
+               border-radius: 0;
+               gap: 0;
+            }
+
+            @media (max-width: 400px) {
+               padding: 20px;
+            }
          }
 
          &__title {
@@ -106,6 +167,12 @@
                box-shadow: 0 0 5px rgba(0, 0, 0, 0.8) inset;
             }
          }
+      }
+   }
+
+   .swiper {
+      @media (max-width: 790px) {
+         display: none;
       }
    }
 

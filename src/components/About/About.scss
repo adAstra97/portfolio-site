@@ -1,6 +1,30 @@
+.about-page {
+   width: 80%;
+   display: flex;
+
+   @media (max-width: 1000px) {
+      width: 70%;
+      flex-direction: column;
+      padding-top: 40px;
+      height: 100svh;
+      gap: 8%;
+      overflow: hidden;
+   }
+
+   @media (max-width: 500px) {
+      height: 90svh;
+      width: 85%;
+   }
+}
+
 .stage-cube-cont {
    position: relative;
    flex: 1;
+   margin-top: 75px;
+
+   @media (max-width: 1000px) {
+      margin-top: 0;
+   }
 }
 
 .cubespinner {
@@ -11,6 +35,11 @@
    transform-style: preserve-3d;
    transform-origin: 100px 100px 0;
    margin-left: calc(50% - 100px);
+
+   @media (max-width: 700px) {
+      transform-origin: 50px 50px 0;
+      margin-left: calc(50% - 50px);
+   }
 
    div {
       position: absolute;
@@ -24,31 +53,60 @@
       justify-content: center;
       align-items: center;
       box-shadow: 0 0 20px 0px lightyellow;
+
+      @media (max-width: 700px) {
+         width: 100px;
+         height: 100px;
+      }
    }
 
    .face1 {
       transform: translateZ(100px);
       color: #dd0031;
+
+      @media (max-width: 700px) {
+         transform: translateZ(50px);
+      }
    }
    .face2 {
       transform: rotateY(90deg) translateZ(100px);
       color: #f06529;
+
+      @media (max-width: 700px) {
+         transform: rotateY(90deg) translateZ(50px);
+      }
    }
    .face3 {
       transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
       color: #28a4d9;
+
+      @media (max-width: 700px) {
+         transform: rotateY(90deg) rotateX(90deg) translateZ(50px);
+      }
    }
    .face4 {
       transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
       color: #5ed4f4;
+
+      @media (max-width: 700px) {
+         transform: rotateY(180deg) rotateZ(90deg) translateZ(50px);
+      }
    }
    .face5 {
       transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
       color: #efd81d;
+
+      @media (max-width: 700px) {
+         transform: rotateY(-90deg) rotateZ(90deg) translateZ(50px);
+      }
    }
    .face6 {
       transform: rotateX(-90deg) translateZ(100px);
       color: #ec4d28;
+
+      @media (max-width: 700px) {
+         transform: rotateX(-90deg) translateZ(50px);
+      }
    }
 }
 

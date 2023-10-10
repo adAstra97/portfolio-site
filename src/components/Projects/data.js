@@ -43,7 +43,7 @@ export const projects = [
    },
    {
       id: 7,
-      title: 'My own game "A way at home"',
+      title: 'My game "A way at home"',
       topics: 'HTML, CSS, Phaser JS, Vanilla JS, Tiled, Sounds',
       image: './images/game.png',
       link: 'https://way-at-home.netlify.app/',
