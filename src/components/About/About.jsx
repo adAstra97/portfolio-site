@@ -22,7 +22,7 @@ const About = () => {
                   <AnimatedLetters letterClass={letterClass} strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']} idx={15}/>
                </h1>
                <p>
-                  Hello! My name is Veronika, and I am a beginner frontend developer. I'm passionate about creating interactive and functional user interfaces for web applications.
+                  Hello! My name is Veronika, and I am a frontend developer. I'm passionate about creating interactive and functional user interfaces for web applications.
                </p>
                <p>
                   My goal is to become an experienced professional in frontend development and contribute to the creation of user-friendly and efficient online tools.

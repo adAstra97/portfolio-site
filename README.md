@@ -1,8 +1,46 @@
-# React + Vite
+# Website "Potfolio"
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my portfolio site. I plan to refine it further as I study new technologies.
 
-Currently, two official plugins are available:
+## Table of contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Overview](#overview)
+  - [Information](#information)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+
+## Overview
+
+### Information
+
+On this site you can find out some information about me, see my works, and also contact me using social networks and messenger.
+Alternatively, you can write me an email.
+
+### Screenshot
+
+![](./main.png)
+
+### Links
+
+- [Live Site URL](https://portfolio-verman.netlify.app/)
+
+## My process
+
+### Built with
+
+- React JS
+- react-router-dom
+- react-loaders
+- SCSS
+- Vite
+- animate.css
+- Email JS
+- SweetAlert 2
+- Slider Swiper
+
+### What I learned
+
+Using React JS to create SPA sites, connecting and using the animate.css library, connecting and using Email JS.
