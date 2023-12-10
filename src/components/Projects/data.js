@@ -48,4 +48,11 @@ export const projects = [
       image: './images/pass-generator.png',
       link: 'https://adastra97.github.io/password-generator/',
    },
+   {
+      id: 8,
+      title: 'Coffee House',
+      topics: 'HTML, SCSS, Vanilla JS, slider, tabs, modal window',
+      image: './images/coffee-house.png',
+      link: 'https://rolling-scopes-school.github.io/adastra97-JSFE2023Q4/coffee-house/',
+   }
 ];
