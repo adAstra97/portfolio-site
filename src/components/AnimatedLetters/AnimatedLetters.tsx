@@ -1,6 +1,12 @@
 import './AnimatedLetters.scss';
 
-const AnimatedLetters = ({ letterClass, strArray, idx }) => {
+interface IAnimLetters {
+   letterClass: string;
+   strArray: string[];
+   idx: number;
+};
+
+const AnimatedLetters = ({ letterClass, strArray, idx }: IAnimLetters) => {
    return (
       <span>
          {

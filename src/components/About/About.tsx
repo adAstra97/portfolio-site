@@ -6,7 +6,7 @@ import { faCss3, faGitAlt, faGithubSquare, faHtml5, faJs, faReact } from '@forta
 import Loader from 'react-loaders';
 
 const About = () => {
-   const [letterClass, setLetterClass] = useState('text-animate');
+   const [letterClass, setLetterClass] = useState<string>('text-animate');
 
    useEffect(() => {
       setTimeout(() => {
@@ -22,13 +22,13 @@ const About = () => {
                   <AnimatedLetters letterClass={letterClass} strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']} idx={15}/>
                </h1>
                <p>
-                  Hello! My name is Veronika, and I am a frontend developer. I'm passionate about creating interactive and functional user interfaces for web applications.
+                  Hello! My name is Veronika, and I am a Frontend developer. I'm passionate about creating interactive and functional user interfaces for web applications.
                </p>
                <p>
                   My goal is to become an experienced professional in frontend development and contribute to the creation of user-friendly and efficient online tools.
                </p>
                <p>
-                  I have skills in HTML, CSS and JavaScript, which are the foundation of web development. I am familiar with various frameworks and libraries like React JS and Phaser JS, and I aim to deep dive into learning them.
+                  I have skills in HTML, CSS, JavaScript and TypeScript, which are the foundation of web development. I am familiar with various frameworks and libraries like React JS and Phaser JS, and I aim to deep dive into learning them.
                </p>
             </div>
 
@@ -55,7 +55,7 @@ const About = () => {
                </div>
             </div>
          </div>
-         <Loader type='pacman'/>
+         <Loader type='pacman' active={true}/>
       </>
    )
 };

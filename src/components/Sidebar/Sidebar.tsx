@@ -1,8 +1,9 @@
 import { Link, NavLink } from 'react-router-dom';
-import './Sidebar.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faFolder, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faLinkedin, faRProject, faSith, faTelegram } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin, faTelegram } from '@fortawesome/free-brands-svg-icons';
+
+import './Sidebar.scss';
 
 const Sidebar = () => {
    return (
@@ -11,16 +12,16 @@ const Sidebar = () => {
             <span>V</span>
          </Link>
          <nav>
-            <NavLink exact="true" activeclassname="active" to="/">
+            <NavLink className={link => link.isActive ? "active" : ""} to="/">
                <FontAwesomeIcon icon={faHome} color='#4d4d4e' />
             </NavLink>
-            <NavLink exact="true" activeclassname="active" className="about-link" to="/about">
+            <NavLink className={link => link.isActive ? "about-link active" : "about-link"} to="/about">
                <FontAwesomeIcon icon={faUser} color='#4d4d4e' />
             </NavLink>
-            <NavLink exact="true" activeclassname="active" className="projects-link" to="/projects">
+            <NavLink className={link => link.isActive ? "projects-link active" : "projects-link"} to="/projects">
                <FontAwesomeIcon icon={faFolder} color='#4d4d4e' />
             </NavLink>
-            <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact">
+            <NavLink className={link => link.isActive ? "contact-link active" : "contact-link"} to="/contact">
                <FontAwesomeIcon icon={faEnvelope} color='#4d4d4e' />
             </NavLink>
          </nav>

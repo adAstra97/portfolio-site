@@ -9,14 +9,14 @@ import AnimatedLetters from '../AnimatedLetters/AnimatedLetters';
 const MySwal = withReactContent(Swal)
 
 const Contact = () => {
-   const [name, setName] = useState('');
-   const [email, setEmail] = useState('');
-   const [subject, setSubject] = useState('');
-   const [message, setMessage] = useState('');
-   const [isSending, setIsSending] = useState(false);
+   const [name, setName] = useState<string>('');
+   const [email, setEmail] = useState<string>('');
+   const [subject, setSubject] = useState<string>('');
+   const [message, setMessage] = useState<string>('');
+   const [isSending, setIsSending] = useState<boolean>(false);
 
    const [letterClass, setLetterClass] = useState('text-animate');
-   const form = useRef();
+   const form = useRef<HTMLFormElement | null>(null);
 
    useEffect(() => {
       setTimeout(() => {
@@ -24,10 +24,12 @@ const Contact = () => {
       }, 3000);
    }, []);
 
-   const sendEmail = (e) => {
-      e.preventDefault();
+   const sendEmail = (event: React.FormEvent<HTMLFormElement>) => {
+      event.preventDefault();
 
       setIsSending(true);
+
+      if (!form.current) return;
 
       emailjs.sendForm('service_h4mb202', 'template_oiy4lon', form.current, '4NZIa3jaFAv14LwGd')
          .then((result) => {
@@ -46,7 +48,7 @@ const Contact = () => {
                setSubject('');
                setMessage('');
             });
-         }, (error) => {
+         }, (error: Error) => {
             setIsSending(false);
 
             MySwal.fire({
@@ -91,9 +93,9 @@ const Contact = () => {
                   </form>
                </div>
             </div>
-            {isSending && <Loader type='pacman'/>}
+            {isSending && <Loader type='pacman' active={true}/>}
          </div>
-         <Loader type='pacman'/>
+         <Loader type='pacman' active={true}/>
       </>
    )
 };

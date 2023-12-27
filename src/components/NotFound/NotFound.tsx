@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react';
-import AnimatedLetters from '../AnimatedLetters/AnimatedLetters';
-import './NotFound.scss';
 import Loader from 'react-loaders';
 import { Link } from 'react-router-dom';
+import AnimatedLetters from '../AnimatedLetters/AnimatedLetters';
+import './NotFound.scss';
 
 const NotFound = () => {
 
-   const [letterClass, setLetterClass] = useState('text-animate');
-   const errorArray = ['4', '0', '4'];
+   const [letterClass, setLetterClass] = useState<string>('text-animate');
+   const errorArray: string[] = ['4', '0', '4'];
 
    useEffect(() => {
       setTimeout(() => {
@@ -26,7 +26,7 @@ const NotFound = () => {
                <Link className="flat-button" to="/">Click to go home</Link>
             </div>
          </div>
-         <Loader type='pacman'/>
+         <Loader type='pacman' active={true}/>
       </>
    )
 };

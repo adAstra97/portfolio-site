@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import Loader from 'react-loaders';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 
@@ -10,10 +11,9 @@ import 'swiper/css/navigation';
 import { projects } from './data';
 import './Projects.scss';
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters';
-import Loader from 'react-loaders';
 
 const Projects = () => {
-   const [letterClass, setLetterClass] = useState('text-animate');
+   const [letterClass, setLetterClass] = useState<string>('text-animate');
 
    useEffect(() => {
       setTimeout(() => {
@@ -77,7 +77,7 @@ const Projects = () => {
                </Swiper>
             </div>
          </div>
-         <Loader type='pacman'/>
+         <Loader type='pacman' active={true}/>
       </>
    )
 };

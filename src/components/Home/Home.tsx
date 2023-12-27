@@ -1,15 +1,14 @@
 import { Link } from 'react-router-dom';
-
-import './Home.scss';
-import { useEffect, useState } from 'react';
-import AnimatedLetters from '../AnimatedLetters/AnimatedLetters';
 import Loader from 'react-loaders';
+import { useEffect, useState } from 'react';
+import './Home.scss';
+import AnimatedLetters from '../AnimatedLetters/AnimatedLetters';
 
 const Home = () => {
-   const [letterClass, setLetterClass] = useState('text-animate');
-   const greetingArray = ['H', 'i', ' ', 'e', 'v', 'e', 'r', 'y', 'o', 'n', 'e', ','];
-   const nameArray = ['e', 'r', 'o', 'n', 'i', 'k', 'a'];
-   const jobArray = ['w', 'e', 'b', ' ', 'd', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r', '👩‍💻'];
+   const [letterClass, setLetterClass] = useState<string>('text-animate');
+   const greetingArray: string[] = ['H', 'i', ' ', 'e', 'v', 'e', 'r', 'y', 'o', 'n', 'e', ','];
+   const nameArray: string[] = ['e', 'r', 'o', 'n', 'i', 'k', 'a'];
+   const jobArray: string[] = ['w', 'e', 'b', ' ', 'd', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r', '👩‍💻'];
 
    useEffect(() => {
       setTimeout(() => {
@@ -32,13 +31,13 @@ const Home = () => {
                   <br />
                   <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={34}/>
                </h1>
-               <h2>Frontend Developer / JavaScript / React JS</h2>
+               <h2>Frontend Developer / TypeScript / React JS</h2>
                <Link to="/contact" className='flat-button'>
                   CONTACT ME
                </Link>
             </div>
          </div>
-         <Loader type='pacman'/>
+         <Loader type='pacman' active={true}/>
       </>
    )
 };

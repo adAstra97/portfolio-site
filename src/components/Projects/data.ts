@@ -1,8 +1,16 @@
-export const projects = [
+interface IProject {
+   id: number;
+   title: string;
+   topics: string;
+   image: string;
+   link: string;
+}
+
+export const projects: IProject[] = [
    {
       id: 1,
       title: 'Todo App',
-      topics: 'React JS Hooks, React Icons',
+      topics: 'TypeScript, React JS Hooks, React Icons',
       image: './images/Todo-app.png',
       link: 'https://todo-app-red-black.netlify.app/',
    },

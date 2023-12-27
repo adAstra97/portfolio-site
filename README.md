@@ -32,6 +32,7 @@ Alternatively, you can write me an email.
 ### Built with
 
 - React JS
+- TypeScript
 - react-router-dom
 - react-loaders
 - SCSS
