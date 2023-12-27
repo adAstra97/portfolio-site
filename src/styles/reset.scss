@@ -3,6 +3,7 @@
    padding: 0px;
    margin: 0px;
    border: none;
+   -webkit-tap-highlight-color: transparent;
 }
 
 *,
@@ -19,8 +20,10 @@ a:visited {
    text-decoration: none;
 }
 
-a:hover {
-   text-decoration: none;
+@media (hover: hover) and (pointer: fine) {
+   a:hover {
+      text-decoration: none;
+   }
 }
 
 /* Common */

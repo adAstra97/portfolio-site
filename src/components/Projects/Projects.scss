@@ -61,8 +61,10 @@
       }
    }
    .text-animate-hover {
-      &:hover {
-         color: #fff;
+      @media (hover: hover) and (pointer: fine) {
+         &:hover {
+            color: #fff;
+         }
       }
    }
 
@@ -160,9 +162,12 @@
             color: $dark-color;
             transition: background-color 0.3s;
 
-            &:hover {
-               background-color: $primary-color;
+            @media (hover: hover) and (pointer: fine) {
+               &:hover {
+                  background-color: $primary-color;
+               }
             }
+
             &:active {
                box-shadow: 0 0 5px rgba(0, 0, 0, 0.8) inset;
             }

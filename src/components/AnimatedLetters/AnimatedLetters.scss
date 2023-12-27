@@ -13,9 +13,11 @@
    display: inline-block;
    animation-fill-mode: both;
 
-   &:hover {
-      animation: rubberBand 1s;
-      color: $primary-color;
+   @media (hover: hover) and (pointer: fine) {
+      &:hover {
+         animation: rubberBand 1s;
+         color: $primary-color;
+      }
    }
 }
 

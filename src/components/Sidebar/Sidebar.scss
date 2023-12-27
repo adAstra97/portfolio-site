@@ -70,20 +70,22 @@
             transition: all 0.3s ease-out;
          }
 
-         &:hover {
-            color: $primary-color;
+         @media (hover: hover) and (pointer: fine) {
+            &:hover {
+               color: $primary-color;
 
-            svg {
-               opacity: 0;
+               svg {
+                  opacity: 0;
 
-               @media (max-width: 500px) {
-                  opacity: 1;
-                  color: $primary-color;
+                  @media (max-width: 500px) {
+                     opacity: 1;
+                     color: $primary-color;
+                  }
                }
-            }
 
-            &:after {
-               opacity: 1;
+               &:after {
+                  opacity: 1;
+               }
             }
          }
 
@@ -192,8 +194,10 @@
                }
             }
 
-            &:hover svg {
-               color: $primary-color;
+            @media (hover: hover) and (pointer: fine) {
+               &:hover svg {
+                  color: $primary-color;
+               }
             }
          }
       }

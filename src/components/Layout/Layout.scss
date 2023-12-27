@@ -98,8 +98,10 @@
    }
 
    .text-animate-hover {
-      &:hover {
-         color: #fff;
+      @media (hover: hover) and (pointer: fine) {
+         &:hover {
+            color: #fff;
+         }
       }
    }
 }

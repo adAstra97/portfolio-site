@@ -97,10 +97,12 @@
       transition: 0.5s;
       white-space: nowrap;
 
-      &:hover {
-         color: $dark-color;
-         background-color: $primary-color;
-         filter: drop-shadow(0 0 5px $primary-color) contrast(1.5) brightness(1.5);
+      @media (hover: hover) and (pointer: fine) {
+         &:hover {
+            color: $dark-color;
+            background-color: $primary-color;
+            filter: drop-shadow(0 0 5px $primary-color) contrast(1.5) brightness(1.5);
+         }
       }
 
       &:active {
