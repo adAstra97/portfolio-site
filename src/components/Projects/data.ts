@@ -62,5 +62,12 @@ export const projects: IProject[] = [
       topics: 'HTML, SCSS, Vanilla JS, slider, tabs, modal window',
       image: './images/coffee-house.png',
       link: 'https://rolling-scopes-school.github.io/adastra97-JSFE2023Q4/coffee-house/',
+   },
+   {
+      id: 9,
+      title: 'Game: "Hangman"',
+      topics: 'HTML, SCSS, Vanilla JS, virtual keyboard, Prettier, ESLint',
+      image: './images/hangman.png',
+      link: 'https://rolling-scopes-school.github.io/adastra97-JSFE2023Q4/hangman/',
    }
 ];
