@@ -32,7 +32,7 @@ const Contact = () => {
       if (!form.current) return;
 
       emailjs.sendForm('service_h4mb202', 'template_oiy4lon', form.current, '4NZIa3jaFAv14LwGd')
-         .then((result) => {
+         .then(() => {
             setIsSending(false);
 
             MySwal.fire({
@@ -48,7 +48,7 @@ const Contact = () => {
                setSubject('');
                setMessage('');
             });
-         }, (error: Error) => {
+         }, () => {
             setIsSending(false);
 
             MySwal.fire({

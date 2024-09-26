@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters';
 import './About.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCss3, faGitAlt, faGithubSquare, faHtml5, faJs, faReact } from '@fortawesome/free-brands-svg-icons';
+import { faAngular, faCss3, faGitAlt, faHtml5, faJs, faReact } from '@fortawesome/free-brands-svg-icons';
 import Loader from 'react-loaders';
 
 const About = () => {
@@ -50,7 +50,7 @@ const About = () => {
                      <FontAwesomeIcon icon={faCss3} color='#5ED4F4'/>
                   </div>
                   <div className="face6">
-                     <FontAwesomeIcon icon={faGithubSquare}  color='#000000'/>
+                     <FontAwesomeIcon icon={faAngular}  color='#E13237'/>
                   </div>
                </div>
             </div>

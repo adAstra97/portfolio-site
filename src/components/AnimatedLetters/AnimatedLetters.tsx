@@ -4,7 +4,7 @@ interface IAnimLetters {
    letterClass: string;
    strArray: string[];
    idx: number;
-};
+}
 
 const AnimatedLetters = ({ letterClass, strArray, idx }: IAnimLetters) => {
    return (
