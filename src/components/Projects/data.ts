@@ -51,13 +51,6 @@ export const projects: IProject[] = [
    },
    {
       id: 7,
-      title: 'Password Generator',
-      topics: 'HTML, CSS, Vanilla JS, Map collection',
-      image: './images/pass-generator.png',
-      link: 'https://adastra97.github.io/password-generator/',
-   },
-   {
-      id: 8,
       title: 'Coffee House',
       topics: 'HTML, SCSS, Vanilla JS, slider, tabs, modal window',
       image: './images/coffee-house.png',
@@ -65,9 +58,30 @@ export const projects: IProject[] = [
    },
    {
       id: 9,
+      title: 'My portfolio',
+      topics: 'React, Swiper, TypeScript, animations',
+      image: './images/portfolio.png',
+      link: 'https://portfolio-verman.netlify.app/',
+   },
+   {
+      id: 10,
       title: 'Game: "Hangman"',
       topics: 'HTML, SCSS, Vanilla JS, virtual keyboard, Prettier, ESLint',
       image: './images/hangman.png',
       link: 'https://rolling-scopes-school.github.io/adastra97-JSFE2023Q4/hangman/',
+   },
+   {
+      id: 11,
+      title: 'YouTube Client App',
+      topics: 'Angular, Angular Material, TypeScript, NgRx, RxJS, Prettier, ESLint',
+      image: './images/youtube-client.png',
+      link: 'https://rolling-scopes-school.github.io/adastra97-ANGULAR2024Q3/#/main',
+   },
+   {
+      id: 12,
+      title: 'Train App',
+      topics: 'Angular, Angular Material, TypeScript, NgRx, RxJS, Prettier, ESLint',
+      image: './images/train.png',
+      link: 'https://train-kvda-2.netlify.app/',
    }
 ];

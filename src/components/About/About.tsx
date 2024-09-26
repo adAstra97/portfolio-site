@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters';
 import './About.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
