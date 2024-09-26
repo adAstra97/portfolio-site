@@ -28,7 +28,7 @@ const About = () => {
                   My goal is to become an experienced professional in frontend development and contribute to the creation of user-friendly and efficient online tools.
                </p>
                <p>
-                  I have skills in HTML, CSS, JavaScript and TypeScript, which are the foundation of web development. I am familiar with various frameworks and libraries like React JS and Phaser JS, and I aim to deep dive into learning them.
+                  I have skills in HTML, CSS, JavaScript and TypeScript, which are the foundation of web development. I am familiar with various frameworks and libraries like React, Angular and Phaser 3, and I aim to deep dive into learning them.
                </p>
             </div>
 
