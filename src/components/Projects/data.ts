@@ -80,8 +80,8 @@ export const projects: IProject[] = [
    {
       id: 12,
       title: 'Train App',
-      topics: 'Angular, Angular Material, TypeScript, NgRx, RxJS, Prettier, ESLint',
+      topics: 'Angular, Angular Material, TypeScript, NgRx, RxJS, Prettier, ESLint, API',
       image: './images/train.png',
-      link: 'https://train-kvda-2.netlify.app/',
+      link: 'https://trains-schedule.netlify.app/#/',
    }
 ];
