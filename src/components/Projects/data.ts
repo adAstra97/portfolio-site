@@ -83,5 +83,12 @@ export const projects: IProject[] = [
       topics: 'Angular, Angular Material, TypeScript, NgRx, RxJS, Prettier, ESLint, API',
       image: './images/train.png',
       link: 'https://trains-schedule.netlify.app/#/',
-   }
+   },
+   {
+      id: 13,
+      title: 'Crypto App',
+      topics: 'Angular, TypeScript, NgRx, RxJS, API, Storybook, Playwright, Chart JS',
+      image: './images/crypto.png',
+      link: 'https://legendary-cripto.netlify.app/',
+   },
 ];
