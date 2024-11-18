@@ -91,4 +91,11 @@ export const projects: IProject[] = [
       image: './images/crypto.png',
       link: 'https://legendary-cripto.netlify.app/',
    },
+   {
+      id: 14,
+      title: 'Pokedex App',
+      topics: 'React, TypeScript, SCSS, Redux Toolkit, Axios, Poke API',
+      image: './images/pokedex.png',
+      link: 'https://pikachu-i-choose-you.netlify.app/',
+   },
 ];
