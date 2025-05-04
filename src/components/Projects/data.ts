@@ -95,7 +95,7 @@ export const projects: IProject[] = [
       id: 13,
       title: 'REST Client',
       topics: 'Next, next-intl, TypeScript, Firebase Auth, Tailwind CSS, Vitest',
-      image: './images/pokedex.png',
+      image: './images/rest-client.png',
       link: 'https://reactive-rest-client.netlify.app/',
    },
 ];
